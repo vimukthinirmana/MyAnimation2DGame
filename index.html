@@ -2,9 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My2DGame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My 2D Game</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <style>
+        /* Custom styles */
+        body {
+            background-image: url("assets/image/bumbalebshape_background.jpg");
+            /*background-color: #1c1c1c;*/
+            /*color: white;*/
+            width: fit-content;
+            height: fit-content;
+        }
+        .jumbotron {
+            color: yellow;
+            padding: 220px;
+            font-size: 30px;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .game-container {
+            text-align: center;
+            padding: 30px;
+        }
+        .play-button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+    </style>
+
+
 </head>
 <body>
+
+<div class="jumbotron text-center">
+    <h1>Welcome to My 2D Game</h1>
+    <p>Embark on an Exciting Adventure</p>
+    <a href="#" class="btn btn-primary btn-lg play-button">Play Now</a>
+</div>
+
+<div class="container game-container">
+    <!-- You can embed your game or animation here -->
+    <!-- This could include HTML5 Canvas or a game engine like Phaser.js -->
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".play-button").on("mouseenter", function() {
+            // Add a fun and playful animation on hover
+            $(this).css("opacity", "0");
+            $(this).css("cursor", "none");
+
+        });
+
+        // Reset the transformation when the mouse leaves the button
+        $(".play-button").on("mouseleave", function() {
+            $(this).css("opacity", "1");
+        });
+    });
+</script>
 
 </body>
 </html>
