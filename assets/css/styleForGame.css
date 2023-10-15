@@ -1,0 +1,18 @@
+.body {
+    margin: 0px;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    /*background-image: url("assets/image/gamebackground01.jpg");*/
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+/*.character {*/
+/*    width: 130px;*/
+/*    margin-top: 54vh;*/
+/*    position: absolute;*/
+/*}*/
+

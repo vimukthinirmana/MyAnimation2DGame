@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation 2D Game</title>
+    <link rel="stylesheet" href="assets/css/styleForGame.css">
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/gameController.js"></script>
+
+</head>
+<body class="body">
+<div class="background" style="background-image: url(assets/image/gamebackground01.jpg)" id="backgroundID">
+
+    <img src="assets/image/png/Idle(0).png" class="character" id="character" >
+
+</div>
+
+<!--<script>
+    $(document).ready(function() {
+        var character1 = $("#character");
+        var characterImgNo = 1;
+        var characterAnimationNo;
+
+        function characterAnimation() {
+            characterImgNo = characterImgNo + 1;
+            if (characterImgNo === 10) {
+                characterImgNo = 1;
+            }
+            character1.attr("src", "assets/image/png/Idle(" + characterImgNo + ").png");
+        }
+
+        function characterAnimationStart() {
+            // alert("start");
+            characterAnimationNo = setInterval(characterAnimation, 200);
+        }
+
+        characterAnimationStart();
+    });
+</script>-->
+
+</body>
+</html>
