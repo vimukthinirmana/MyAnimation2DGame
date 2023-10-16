@@ -8,6 +8,8 @@
     /*background-image: url("assets/image/gamebackground01.jpg");*/
     background-size: cover;
     background-repeat: repeat-x;
+    overflow-x: hidden;
+    position: absolute;
 }
 
 /*.character {*/
@@ -15,4 +17,14 @@
 /*    margin-top: 54vh;*/
 /*    position: absolute;*/
 /*}*/
+
+.box{
+    width: 85px;
+    height: 74px;
+    margin-top: 80vh;
+    position: absolute;
+    background-color: red;
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+}
 
